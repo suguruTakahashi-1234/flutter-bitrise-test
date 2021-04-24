@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "35020235923",
+    "project_id": "pre-order-app-2021",
+    "storage_bucket": "pre-order-app-2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35020235923:android:e734d252de488eee07d966",
+        "android_client_info": {
+          "package_name": "ise.sr.u2021.pre_order_flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35020235923-os3um1j5or8sln926o9rsnj6eutqfd71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCxhol9zjC5QSBz5-DbhnIBjYKn8hNkWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35020235923-os3um1j5or8sln926o9rsnj6eutqfd71.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "35020235923-dpt0fiqpco296070svkb76lugum47vli.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ise.sr.2021.preOrderFlutterApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

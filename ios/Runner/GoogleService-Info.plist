@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>35020235923-dpt0fiqpco296070svkb76lugum47vli.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.35020235923-dpt0fiqpco296070svkb76lugum47vli</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCFXRjaHQ3Wn575jIKe5gmdLnZoFebiHBs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>35020235923</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ise.sr.2021.preOrderFlutterApp</string>
+	<key>PROJECT_ID</key>
+	<string>pre-order-app-2021</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pre-order-app-2021.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:35020235923:ios:7108d4b69d18047c07d966</string>
+</dict>
+</plist>

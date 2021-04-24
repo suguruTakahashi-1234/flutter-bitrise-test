@@ -1,0 +1,8 @@
+app_identifier("ise.sr.2021.preOrderFlutterApp") # The bundle identifier of your app
+apple_id("samonikura100@gmail.com") # Your Apple email address
+
+itc_team_id("122486186") # App Store Connect Team ID
+team_id("Z374HA4GH7") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
