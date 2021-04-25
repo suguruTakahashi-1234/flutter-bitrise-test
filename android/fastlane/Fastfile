@@ -38,7 +38,7 @@ platform :android do
 
   desc "My awesome app"
   lane :distribute do
-    gradle(task: "clean")
+    gradle(task: "clean assembleRelease", project_dir: 'android/')
     gradle(
       task: 'assemble',
       build_type: 'Release'
