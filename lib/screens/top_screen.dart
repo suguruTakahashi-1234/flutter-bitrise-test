@@ -68,7 +68,7 @@ class TopScreen extends StatelessWidget {
                             TextButton(
                               onPressed: () async {
                                 model.updateTopScreenTabIndex(0);
-                                await model.logout();
+                                model.logout();
                                 await Fluttertoast.showToast(
                                   msg: 'ログアウトしました',
                                   fontSize: 20.0,
