@@ -2,7 +2,9 @@
 
 [![Codemagic build status](https://api.codemagic.io/apps/6098b499f3dcf2b4763b420c/6098b499f3dcf2b4763b420b/status_badge.svg)](https://codemagic.io/apps/6098b499f3dcf2b4763b420c/6098b499f3dcf2b4763b420b/latest_build)
 
-A new Flutter application.
+## Architecture
+
+![](./reference/architecture.drawio.svg)
 
 ## Getting Started
 
