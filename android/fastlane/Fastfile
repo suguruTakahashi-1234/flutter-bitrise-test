@@ -46,7 +46,7 @@ platform :android do
       app: "1:35020235923:android:e734d252de488eee07d966",
       groups: "test",
       release_notes: "Test Distribution(Android)",
-      service_credentials_file: "/Users/sugurutakahashi/firebase-key/pre-order-app-2021-firebase-app-distribution.json",
+      service_credentials_file: "/Users/sugurutakahashi/credentials/pre-order-app-2021-firebase-app-distribution.json",
       apk_path: "../build/app/outputs/apk/release/app-release.apk"
     )
   end
