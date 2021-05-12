@@ -6,6 +6,10 @@
 
 ![](./reference/architecture.drawio.svg)
 
+## CI/CD
+
+![](./reference/cicd.drawio.svg)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
