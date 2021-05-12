@@ -10,38 +10,38 @@
 
 ## アプリのダウンロード方法
 
-【テストユーザー情報】
-用途：共有の App Distribution で配信されたテストアプリのダウンロード
-端末条件：iOS 14.4以上の端末、Android11以上の端末
+【テストユーザー情報】  
+用途：共有の App Distribution で配信されたテストアプリのダウンロード  
+端末条件：iOS 14.4以上の端末、Android11以上の端末  
 
-■iOS
-iOSアカウント：iseshopuser@gmail.com
-iOSアカウントパスワード：ise20212021
-iOSアクティベートリンク：https://appdistribution.firebase.dev/i/38515203481b7a05
+■iOS  
+iOSアカウント：iseshopuser@gmail.com  
+iOSアカウントパスワード：ise20212021  
+iOSアクティベートリンク：https://appdistribution.firebase.dev/i/38515203481b7a05  
 
-■Android
-Androidアカウント：isetaroand@gmail.com
-Androidアカウントパスワード：ise20212021
-Androidアクティベートリンク：https://appdistribution.firebase.dev/i/a8d4afe85f96f762
+■Android  
+Androidアカウント：isetaroand@gmail.com  
+Androidアカウントパスワード：ise20212021  
+Androidアクティベートリンク：https://appdistribution.firebase.dev/i/a8d4afe85f96f762  
 
-■大まかなダウンロード方法
+■大まかなダウンロード方法  
 App Testerアプリのダウンロード→対象のアプリのダウンロードという手順です。
-1. 端末からアクティベートリンクにアクセスする
-2. iOSならiOSアカウント、AndroidならAndroidアカウントの上記記載されているメールアドレス/パスワードを入力する
-3. Gmail にログインする（もしかすると二要素認証に引っかかって誰かにアクティベートしてもらわないとログインできない可能性があります。）
-4. 最新（おそらく）のメールの中央部に「Install Firebase App Tester」とあるので、そこから「App Tester」アプリをダウンロードする（※ここでDownload the latest buildをタップしてもApp Testerのアプリがないためダウンロードできない）
-5. App Tester を立ち上げるとGoogleのログインが求められるので、そこではテストアカウントでログインする（※個人用のアカウントは使用しない）
-6. 画面の指示通りに操作していくとApp Testerにダンロードできるアプリの一覧が出てくるので、1番上のアプリ（最新のアプリ）をダウンロードする
+1. iPhone or Android 端末からアクティベートリンクにアクセスする
+2. iOS なら iOS アカウント、Android なら Android アカウントの上記記載されているメールアドレス/パスワードを入力する
+3. Gmail にログインする（共有アカウントを使用しているため、もしかすると二要素認証に引っかかって誰かにアクティベートしてもらわないとログインできない可能性があります。）
+4. 最新（おそらく）のメールの中央部に「Install Firebase App Tester」とあるので、そこから「App Tester」アプリをダウンロードする（※ここで Download the latest build をタップしても App Tester のアプリがないためダウンロードできない）
+5. App Tester を立ち上げると Google のログインが求められるので、そこでは先程ログインしたアカウントでログインする（※個人のアカウントは使用しない）
+6. 画面の指示通りに操作していくと App Tester にダンロードできるアプリの一覧が出てくるので、1番上のアプリ（最新のアプリ）をダウンロードする
 7. ダウンロードに成功するとホーム画面にインストールしたアプリが表示されるので、それを起動するとアプリが操作できる
 
-■手順の参考となるリンク
-※条件が異なるため全く同じ手順ではありません
+■手順の参考となるリンク  
+※条件が異なるため全く同じ手順ではありません  
 
-【iOS参考】[iOS] Firebase App Distributionを使用してiOSアプリを配布する
-https://dev.classmethod.jp/articles/ios-firebase-distribution/
+【iOS参考】[iOS] Firebase App Distributionを使用してiOSアプリを配布する  
+https://dev.classmethod.jp/articles/ios-firebase-distribution/  
 
-【Android参考】Firebase App DistributionでAndroidアプリをダウンロードする方法
-https://pentagon.tokyo/app/2312/
+【Android参考】Firebase App DistributionでAndroidアプリをダウンロードする方法  
+https://pentagon.tokyo/app/2312/  
 
 ## Architecture
 
