@@ -19,20 +19,18 @@ platform :ios do
 
   desc "Push a new beta build to TestFlight"
   lane :beta do
-    increment_build_number
     build_app(workspace: "Runner.xcworkspace", scheme: "Runner", export_method: "ad-hoc")
     upload_to_testflight
   end
 
   desc "Push a new beta build to Firebase App Distribution"
   lane :distribute do
-    increment_build_number
     build_app(workspace: "Runner.xcworkspace", scheme: "Runner", export_method: "ad-hoc")
     firebase_app_distribution(
       app: "1:35020235923:ios:7108d4b69d18047c07d966",
       groups: "test",
       release_notes: "Test Distribution(iOS)",
-      service_credentials_file: "/Users/sugurutakahashi/firebase-key/pre-order-app-2021-firebase-app-distribution.json"
+      service_credentials_file: "/Users/sugurutakahashi/credentials/pre-order-app-2021-firebase-app-distribution.json"
     )
   end
 
