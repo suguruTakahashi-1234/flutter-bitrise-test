@@ -2,6 +2,47 @@
 
 [![Codemagic build status](https://api.codemagic.io/apps/6098b499f3dcf2b4763b420c/6098b499f3dcf2b4763b420b/status_badge.svg)](https://codemagic.io/apps/6098b499f3dcf2b4763b420c/6098b499f3dcf2b4763b420b/latest_build)
 
+## 注意点
+
+- Codemagic との連携は現在 OFF にしているので、CI/CDは動きません。
+そのため、アップデートしたアプリを配布したい場合は「Build to Firebase App Distribution」の記載の手順で Firebase App Distribution から配布してください。ただし、それを行うためには Firebase への接続のための鍵ファイルとアプリ署名のための鍵ファイルが必要になるので高橋までご連絡ください。（このように運用に属人的にならないためにも Codemagic などでの CI/CD の仕組みづくりは大事。）
+- Firebase アカウントは高橋個人のものを使用しております。予告なくアプリが使用できなくなる可能性があるのでご了承ください。また、従量課金の設定なので優しく使っていただけると幸いです。
+
+## アプリのダウンロード方法
+
+【テストユーザー情報】
+用途：共有の App Distribution で配信されたテストアプリのダウンロード
+端末条件：iOS 14.4以上の端末、Android11以上の端末
+
+■iOS
+iOSアカウント：iseshopuser@gmail.com
+iOSアカウントパスワード：ise20212021
+iOSアクティベートリンク：https://appdistribution.firebase.dev/i/38515203481b7a05
+
+■Android
+Androidアカウント：isetaroand@gmail.com
+Androidアカウントパスワード：ise20212021
+Androidアクティベートリンク：https://appdistribution.firebase.dev/i/a8d4afe85f96f762
+
+■大まかなダウンロード方法
+App Testerアプリのダウンロード→対象のアプリのダウンロードという手順です。
+1. 端末からアクティベートリンクにアクセスする
+2. iOSならiOSアカウント、AndroidならAndroidアカウントの上記記載されているメールアドレス/パスワードを入力する
+3. Gmail にログインする（もしかすると二要素認証に引っかかって誰かにアクティベートしてもらわないとログインできない可能性があります。）
+4. 最新（おそらく）のメールの中央部に「Install Firebase App Tester」とあるので、そこから「App Tester」アプリをダウンロードする（※ここでDownload the latest buildをタップしてもApp Testerのアプリがないためダウンロードできない）
+5. App Tester を立ち上げるとGoogleのログインが求められるので、そこではテストアカウントでログインする（※個人用のアカウントは使用しない）
+6. 画面の指示通りに操作していくとApp Testerにダンロードできるアプリの一覧が出てくるので、1番上のアプリ（最新のアプリ）をダウンロードする
+7. ダウンロードに成功するとホーム画面にインストールしたアプリが表示されるので、それを起動するとアプリが操作できる
+
+■手順の参考となるリンク
+※条件が異なるため全く同じ手順ではありません
+
+【iOS参考】[iOS] Firebase App Distributionを使用してiOSアプリを配布する
+https://dev.classmethod.jp/articles/ios-firebase-distribution/
+
+【Android参考】Firebase App DistributionでAndroidアプリをダウンロードする方法
+https://pentagon.tokyo/app/2312/
+
 ## Architecture
 
 ![](./reference/architecture.drawio.svg)
@@ -10,18 +51,68 @@
 
 ![](./reference/cicd.drawio.svg)
 
-## Getting Started
+## Requirements
 
-This project is a starting point for a Flutter application.
+- Flutter: 2.0.6
+- Dart: 2.12.3
+- Xcode: 12.5
+- Android Studio: 4.2
 
-A few resources to get you started if this is your first Flutter project:
+```shell
+$ flutter --version
+Flutter 2.0.6 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision 1d9032c7e1 (12 days ago) • 2021-04-29 17:37:58 -0700
+Engine • revision 05e680e202
+Tools • Dart 2.12.3
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+$ sw_vers
+ProductName:	macOS
+ProductVersion:	11.3.1
+BuildVersion:	20E241
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+$ xcodebuild -version
+Xcode 12.5
+Build version 12E262
+
+$ flutter doctor -v
+[✓] Flutter (Channel stable, 2.0.6, on macOS 11.3.1 20E241 darwin-x64, locale ja-JP)
+    • Flutter version 2.0.6 at /Users/sugurutakahashi/development/flutter
+    • Framework revision 1d9032c7e1 (12 days ago), 2021-04-29 17:37:58 -0700
+    • Engine revision 05e680e202
+    • Dart version 2.12.3
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 29.0.3)
+    • Android SDK at /Users/sugurutakahashi/Library/Android/sdk
+    • Platform android-30, build-tools 29.0.3
+    • Java binary at: /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/bin/java
+    • Java version OpenJDK Runtime Environment (build 11.0.8+10-b944.6916264)
+    • All Android licenses accepted.
+
+[✓] Xcode - develop for iOS and macOS
+    • Xcode at /Applications/Xcode.app/Contents/Developer
+    • Xcode 12.5, Build version 12E262
+    • CocoaPods version 1.10.1
+
+[✓] Chrome - develop for the web
+    • Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[✓] Android Studio (version 4.2)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 11.0.8+10-b944.6916264)
+
+[✓] VS Code (version 1.56.1)
+    • VS Code at /Applications/Visual Studio Code.app/Contents
+    • Flutter extension version 3.22.0
+
+[✓] Connected device (1 available)
+    • Chrome (web) • chrome • web-javascript • Google Chrome 90.0.4430.212
+
+• No issues found!
+```
 
 ### Build to Firebase App Distribution
 
