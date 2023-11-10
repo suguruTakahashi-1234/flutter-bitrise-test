@@ -14,16 +14,6 @@
 用途：共有の App Distribution で配信されたテストアプリのダウンロード  
 端末条件：iOS 14.4以上の端末、Android11以上の端末  
 
-■iOS  
-iOSアカウント：iseshopuser@gmail.com  
-iOSアカウントパスワード：ise20212021  
-iOSアクティベートリンク：https://appdistribution.firebase.dev/i/38515203481b7a05  
-
-■Android  
-Androidアカウント：isetaroand@gmail.com  
-Androidアカウントパスワード：ise20212021  
-Androidアクティベートリンク：https://appdistribution.firebase.dev/i/a8d4afe85f96f762  
-
 ■大まかなダウンロード方法  
 App Testerアプリのダウンロード→対象のアプリのダウンロードという手順です。
 1. iPhone or Android 端末からアクティベートリンクにアクセスする
@@ -138,7 +128,6 @@ $ fastlane distribute
 $ cd ios
 $ fastlane beta
 ```
-
 
 ### Enabling debug mode Local (Firebase Analitycis)
 
